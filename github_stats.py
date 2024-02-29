@@ -377,7 +377,7 @@ Languages:
         # TODO: Improve languages to scale by number of contributions to
         #       specific filetypes
         if "C++" in self._languages:
-            self._languages["C"]["size"] -= 420000 # Size of json.hpp file in Trivia-Game repos
+            self._languages["C++"]["size"] -= 420000 # Size of json.hpp file in Trivia-Game repos
         
         langs_total = sum([v.get("size", 0) for v in self._languages.values()])
         for k, v in self._languages.items():
